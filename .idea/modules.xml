@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SQLite.iml" filepath="$PROJECT_DIR$/SQLite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/karobar.iml" filepath="$PROJECT_DIR$/karobar.iml" group="karobar" />
+      <module fileurl="file://$PROJECT_DIR$/app/karobar-app.iml" filepath="$PROJECT_DIR$/app/karobar-app.iml" group="karobar/app" />
+    </modules>
+  </component>
+</project>
