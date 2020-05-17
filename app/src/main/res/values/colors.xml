@@ -9,6 +9,6 @@
     <color name="note_list_text">#232323</color>
     <color name="msg_no_products">#999</color>
     <color name="productName_list_text">#232323</color>
-    <color name="productDescription_list_text">#232323</color>
+    <color name="productDescription_list_text">#858585</color>
     <color name="hint_enter_product">#89c3c3c3</color>
 </resources>
