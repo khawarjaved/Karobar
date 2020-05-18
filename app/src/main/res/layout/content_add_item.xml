@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="49dp"
         android:id="@+id/inputItem"
-        android:hint="Enter title here"/>
+        android:hint="Enter Product Name"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -29,5 +29,5 @@
         android:layout_alignEnd="@+id/inputItem"
         android:layout_marginTop="31dp"
         android:id="@+id/inputDesc"
-        android:hint="Enter description here"/>
+        android:hint="Enter Product Description"/>
 </RelativeLayout>
