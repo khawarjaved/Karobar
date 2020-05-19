@@ -1,4 +1,4 @@
-package com.hazmirulafiq.androidsqlitedatabasedemo;
+package com.khawarjk.karobar;
 
 /**
  * Created by IceMann on 23/2/2017.

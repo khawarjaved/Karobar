@@ -1,4 +1,4 @@
-package com.hazmirulafiq.androidsqlitedatabasedemo;
+package com.khawarjk.karobar;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

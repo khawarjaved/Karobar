@@ -1,4 +1,4 @@
-package com.hazmirulafiq.androidsqlitedatabasedemo;
+package com.khawarjk.karobar;
 
 import org.junit.Test;
 
