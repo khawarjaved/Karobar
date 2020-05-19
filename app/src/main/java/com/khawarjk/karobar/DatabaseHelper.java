@@ -1,7 +1,7 @@
 package com.khawarjk.karobar;
 
 /**
- * Created by IceMann on 23/2/2017.
+ * Created by khawarjk on 18/5/2020.
  */
 
 import android.content.Context;
@@ -20,10 +20,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     static final String _ID = "_id";
     static final String TITLE = "Title";
     static final String DESC = "Description";
+    static final String TIME = "timestamp";
 
     // Creating table query
     private static final String CREATE_TABLE = "CREATE TABLE " + TABLE_NAME + "(" + _ID
-            + " INTEGER PRIMARY KEY, " + TITLE + " TEXT NOT NULL, " + DESC + " TEXT);";
+            + " INTEGER PRIMARY KEY, " + TITLE
+            + " TEXT NOT NULL, " + DESC + " TEXT," + TIME + "DATETIME DEFAULT CURRENT_TIMESTAMP "+");";
 
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
