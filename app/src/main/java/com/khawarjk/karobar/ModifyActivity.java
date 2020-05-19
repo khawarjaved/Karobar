@@ -36,11 +36,13 @@ public class ModifyActivity extends AppCompatActivity {
         modTitle = (EditText) findViewById(R.id.modTitle);
         modDesc = (EditText) findViewById(R.id.modDesc);
 
+
         Bundle intentData = getIntent().getExtras();
 
         final String myID = intentData.getString("Id");
         final String myTitle = intentData.getString("Title");
         final String myDescription = intentData.getString("Desc");
+       // final String myTime = intentData.getString("time");
 
         modTitle.setText(myTitle);
         modDesc.setText(myDescription);

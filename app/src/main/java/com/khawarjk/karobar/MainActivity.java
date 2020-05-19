@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private SimpleCursorAdapter adapter;
     private DatabaseHelper dbHelper;
 
-    final String[] from = new String[]{dbHelper._ID, dbHelper.TITLE, dbHelper.DESC};
-    final int[] to = new int[]{R.id.id, R.id.listTitle, R.id.listDesc};
+    final String[] from = new String[]{dbHelper._ID, dbHelper.TITLE, dbHelper.DESC, dbHelper.TIME};
+    final int[] to = new int[]{R.id.id, R.id.listTitle, R.id.listDesc, R.id.timestamp};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,16 +67,19 @@ public class MainActivity extends AppCompatActivity {
                 TextView itemID = (TextView) view.findViewById(R.id.id);
                 TextView itemTitle = (TextView) view.findViewById(R.id.listTitle);
                 TextView itemDesc = (TextView) view.findViewById(R.id.listDesc);
+                TextView itemTime = (TextView) view.findViewById(R.id.timestamp);
 
                 String myId = itemID.getText().toString();
                 String myTitle = itemTitle.getText().toString();
                 String myDesc = itemDesc.getText().toString();
+                String myTime = itemTime.getText().toString();
 
 
                 Intent intent = new Intent(getApplicationContext(), ModifyActivity.class);
                 intent.putExtra("Id", myId);
                 intent.putExtra("Title", myTitle);
                 intent.putExtra("Desc", myDesc);
+                intent.putExtra("Time", myTime);
                 startActivity(intent);
             }
         });
@@ -88,15 +91,18 @@ public class MainActivity extends AppCompatActivity {
                 TextView itemID = (TextView) view.findViewById(R.id.id);
                 TextView itemTitle = (TextView) view.findViewById(R.id.listTitle);
                 TextView itemDesc = (TextView) view.findViewById(R.id.listDesc);
+                TextView itemTime = (TextView) view.findViewById(R.id.timestamp);
 
                 String myId = itemID.getText().toString();
                 String myTitle = itemTitle.getText().toString();
                 String myDesc = itemDesc.getText().toString();
+                String myTime = itemTime.getText().toString();
 
                 Intent intent = new Intent(getApplicationContext(), ModifyActivity.class);
                 intent.putExtra("Id", myId);
                 intent.putExtra("Title", myTitle);
                 intent.putExtra("Desc", myDesc);
+                intent.putExtra("Time", myTime);
                 startActivity(intent);
 
                 return false;
