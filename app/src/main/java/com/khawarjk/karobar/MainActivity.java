@@ -134,6 +134,8 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         if (id == R.id.users) {
+            Intent intent = new Intent(getApplicationContext(), Users.class);
+            startActivity(intent);
             return true;
         }
         return super.onOptionsItemSelected(item);

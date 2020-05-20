@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Users"></activity>
         <activity
-            android:name="com.khawarjk.karobar.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -19,18 +20,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.khawarjk.karobar.AddItem"
+            android:name=".AddItem"
             android:label="@string/title_activity_add_list"
-            android:parentActivityName="com.khawarjk.karobar.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.khawarjk.karobar.MainActivity" />
         </activity>
         <activity
-            android:name="com.khawarjk.karobar.ModifyActivity"
+            android:name=".ModifyActivity"
             android:label="@string/title_activity_modify"
-            android:parentActivityName="com.khawarjk.karobar.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
