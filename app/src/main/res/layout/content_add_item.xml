@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="49dp"
-        android:id="@+id/inputItem"
+        android:id="@+id/inputTitle"
         android:hint="Enter Product Name"/>
 
     <EditText
@@ -24,10 +24,11 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/inputItem"
-        android:layout_alignRight="@+id/inputItem"
-        android:layout_alignEnd="@+id/inputItem"
+        android:layout_below="@+id/inputTitle"
+        android:layout_alignRight="@+id/inputTitle"
+        android:layout_alignEnd="@+id/inputTitle"
         android:layout_marginTop="31dp"
-        android:id="@+id/inputDesc"
+        android:id="@+id/inputDescription"
         android:hint="Enter Product Description"/>
+
 </RelativeLayout>

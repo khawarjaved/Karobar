@@ -16,6 +16,7 @@ public class AddItem extends AppCompatActivity {
 
     private EditText inputTitle;
     private EditText inputDesc;
+    private EditText inputTime;
     private DatabaseManager dbManager;
 
     @Override
@@ -27,8 +28,9 @@ public class AddItem extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        inputTitle = (EditText) findViewById(R.id.inputItem);
-        inputDesc = (EditText) findViewById(R.id.inputDesc);
+        inputTitle = (EditText) findViewById(R.id.inputTitle);
+        inputDesc = (EditText) findViewById(R.id.inputDescription);
+
 
         dbManager = new DatabaseManager(this);
         dbManager.open();

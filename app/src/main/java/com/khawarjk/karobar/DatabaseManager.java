@@ -31,25 +31,25 @@ public class DatabaseManager {
 
     public void insert(String title, String description) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put(dbHelper.TITLE, title);
-        contentValues.put(dbHelper.DESC, description);
+        contentValues.put(dbHelper.TITLE_COLUMN, title);
+        contentValues.put(dbHelper.DESCRIPTION_COLUMN, description);
         database.insert(dbHelper.TABLE_NAME, null, contentValues);
     }
 
     public void update(int id, String title, String description) {
         ContentValues contentValues = new ContentValues();
-        contentValues.put(dbHelper.TITLE, title);
-        contentValues.put(dbHelper.DESC, description);
-        database.update(dbHelper.TABLE_NAME, contentValues, dbHelper._ID + " = " + id, null);
+        contentValues.put(dbHelper.TITLE_COLUMN, title);
+        contentValues.put(dbHelper.DESCRIPTION_COLUMN, description);
+        database.update(dbHelper.TABLE_NAME, contentValues, dbHelper.ID_COLUMN + " = " + id, null);
     }
 
     public void delete(int id) {
-        database.delete(dbHelper.TABLE_NAME,dbHelper._ID + " ='" + id + "'",null);
+        database.delete(dbHelper.TABLE_NAME,dbHelper.ID_COLUMN + " ='" + id + "'",null);
     }
 
     public Cursor fetch() {
-        String[] columns = new String[]{dbHelper._ID, dbHelper.TITLE, dbHelper.DESC, dbHelper.TIME};
-        Cursor cursor = database.query(dbHelper.TABLE_NAME, columns, null, null, null, null, null);
+        String[] columns = new String[]{dbHelper.ID_COLUMN, dbHelper.TITLE_COLUMN, dbHelper.DESCRIPTION_COLUMN, dbHelper.TIMESTAMP_COLUMN};
+        Cursor cursor = database.query(dbHelper.TABLE_NAME, columns, null, null, null, null, "Timestamp DESC");
         if (cursor != null) {
             cursor.moveToFirst();
         }

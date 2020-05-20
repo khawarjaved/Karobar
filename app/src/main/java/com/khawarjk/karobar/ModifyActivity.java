@@ -34,18 +34,19 @@ public class ModifyActivity extends AppCompatActivity {
         dbManager.open();
 
         modTitle = (EditText) findViewById(R.id.modTitle);
-        modDesc = (EditText) findViewById(R.id.modDesc);
+        modDesc = (EditText) findViewById(R.id.modDescription);
 
 
         Bundle intentData = getIntent().getExtras();
 
         final String myID = intentData.getString("Id");
         final String myTitle = intentData.getString("Title");
-        final String myDescription = intentData.getString("Desc");
-       // final String myTime = intentData.getString("time");
+        final String myDescription = intentData.getString("Description");
+
 
         modTitle.setText(myTitle);
         modDesc.setText(myDescription);
+
         id = Long.parseLong(myID);
 
         FloatingActionButton fabDelete = (FloatingActionButton) findViewById(R.id.fabDelete);

@@ -26,9 +26,10 @@
         android:text="Description"
         android:ems="10"
         android:layout_marginTop="28dp"
-        android:id="@+id/modDesc"
+        android:id="@+id/modDescription"
         android:layout_below="@+id/modTitle"
         android:layout_alignLeft="@+id/modTitle"
         android:layout_alignStart="@+id/modTitle" />
+
 
 </RelativeLayout>
