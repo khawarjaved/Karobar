@@ -133,7 +133,9 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_clear_all) {
             return true;
         }
-
+        if (id == R.id.users) {
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 }

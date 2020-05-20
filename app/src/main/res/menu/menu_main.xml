@@ -7,4 +7,9 @@
         android:orderInCategory="100"
         android:title="Clear database"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/users"
+        android:orderInCategory="100"
+        android:title="Users"
+        app:showAsAction="never" />
 </menu>
